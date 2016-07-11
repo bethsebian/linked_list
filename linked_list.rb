@@ -16,4 +16,14 @@ class LinkedList
 
     current.link = Node.new(data)
   end
+
+  def last_node
+    current = @head
+
+    until current.link == nil
+      current = current.link
+    end
+
+    current
+  end
 end
